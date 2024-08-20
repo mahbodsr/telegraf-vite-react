@@ -263,7 +263,7 @@ app.get("/api/phonecode/:phonecode", async (req: Request) => {
       else authenticateJWT(req, res, next);
     },
     (_, res) => {
-      res.sendFile(path.join(__dirname, "..", "root.html"));
+      res.sendFile(path.join(__dirname, "..", "dist", "root.html"));
     }
   );
 
