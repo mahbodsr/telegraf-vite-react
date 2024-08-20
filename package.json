@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && tsc --project tsconfig.server.json",
+    "build": "tsc -b && vite build && tsc --project tsconfig.server.json && node src/rename",
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "node ./dist/server"

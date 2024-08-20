@@ -112,7 +112,7 @@ app.get("/api/phonecode/:phonecode", async (req: Request) => {
     new StoreSession("mahbodsr_second"),
     +process.env.API_ID!,
     process.env.API_HASH!,
-    { proxy: { ip: "127.0.0.1", port: 10808, socksType: 5 } }
+    {}
   );
 
   app.listen(PORT, () => {
@@ -263,7 +263,7 @@ app.get("/api/phonecode/:phonecode", async (req: Request) => {
       else authenticateJWT(req, res, next);
     },
     (_, res) => {
-      res.sendFile(path.join(__dirname, "..", "index.html"));
+      res.sendFile(path.join(__dirname, "..", "root.html"));
     }
   );
 
