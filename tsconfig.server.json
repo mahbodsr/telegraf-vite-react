@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "removeComments": true,
+    "target": "ES2021",
+    "outDir": "dist",
+    "baseUrl": "./",
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["node_modules/@types", "types"],
+    "moduleResolution": null,
+    "esModuleInterop": true,
+    "noEmit": false,
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["./src/server.ts"]
+}
